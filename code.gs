@@ -1,6 +1,6 @@
 var token = "<AddTelegramBot:TokenHere>";
 var telegramUrl = "https://api.telegram.org/bot" + token;
-var GroupId = "<AddTelegramGroupIdHere>"
+var groupId = "<AddTelegramGroupIdHere>"
 
 function sendMessage(id, text) {
   var data = {
@@ -27,5 +27,5 @@ function myFunction() {
         var answer = response[i].getResponse();
         text += ${question}\n${answer}\n\n
     }
-  sendMessage(GroupId, text)
+  sendMessage(groupId, text)
 };
